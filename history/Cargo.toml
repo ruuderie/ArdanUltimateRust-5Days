@@ -1,0 +1,102 @@
+[package]
+name = "top_level"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[workspace]
+members = [
+    # Day 1, Hour 1
+    "src/variables",
+    "src/hello_login_system", # For `day1/hour1/hello_world.md`
+    "src/hello_auth", # For `day1/hour1/hello_library.md`
+    "src/hello_as_a_service", # For `day1/hour1/hello_library.md`
+    "src/hello_service_exe", # For `day1/hour1/hello_library.md`
+    "src/auth_if", # For `day1/hour1/simple_login_test.md`
+    "src/auth_if_exe", # For `day1/hour1/simple_login_test.md`
+
+    # Day 1, Hour 2
+    "src/auth_enum", # For `day1/hour2/enums.md`
+    "src/auth_enum_exe", # For `day1/hour2/enums.md`
+    "src/auth_enum2", # For `day1/hour2/enums.md`
+    "src/auth_enum3", # For `day1/hour2/enums.md`
+    "src/auth_enum_exe3", # For `day1/hour2/enums.md`
+    "src/auth_enum_fn", # For `day1/hour2/enums.md`
+    "src/auth_enum_fn_exe", # For `day1/hour2/enums.md`
+    "src/auth_struct", # For `day1/hour2/structs.md`
+    "src/auth_struct_exe", # For `day1/hour2/structs.md`
+
+    # Day 1, Hour 3
+    "src/auth_vec", # For `day1/hour3/vectors.md`
+    "src/auth_vec_exe", # For `day1/hour3/vectors.md`
+    "src/auth_hashmap", # For `day1/hour3/hashmaps.md`
+    "src/auth_hashmap_exe", # For `day1/hour3/hashmaps.md`
+    "src/auth_json", # For `day1/hour3/serialization.md`
+    "src/auth_json_exe", # For `day1/hour3/serialization.md`
+    "src/auth_passwords", # For `day1/hour3/hashing.md`
+    "src/auth_passwords_exe", # For `day1/hour3/hashing.md`
+
+    # Day 1, Hour 4
+    "src/userman",  # For `day1/hour4/cli.md`
+    "src/auth_userman", # For `day1/hour4/cli.md`
+
+    # Day 2, Hour 1
+    "src/modules1", # For `day2/hour1/modules.md`
+    "src/modules1_exe", # For `day2/hour1/modules.md`
+    "src/modules2", # For `day2/hour1/modules.md`
+    "src/docs", # For `day2/hour1/documentation.md`
+    "src/docs_exe", # For `day2/hour1/documentation.md`
+    "src/errors1", # For `day2/hour1/errors.md`
+    "src/errors2", # For `day2/hour1/errors.md`
+    "src/errors3", # For `day2/hour1/errors.md`
+
+    # Day 2, Hour 2
+    "src/borrow_move1", # For `day2/hour2/borrow_checker.md`
+    "src/borrow_move2", # For `day2/hour2/borrow_checker.md`
+    "src/borrow_move3", # For `day2/hour2/borrow_checker.md`
+    "src/borrow_move4", # For `day2/hour2/borrow_checker.md`
+    "src/borrow_move5", # For `day2/hour2/borrow_checker.md`
+    "src/borrow_iter",  # For `day2/hour2/borrow_checker.md`
+    "src/lifetime_func", # For `day2/hour2/lifetimes.md`
+    "src/borrow_oops", # For `day2/hour2/oop.md`
+    "src/borrow_oops2", # For `day2/hour2/oop.md`
+    "src/borrow_oops3", # For `day2/hour2/oop.md`
+    "src/rc_bench", # For `day2/hour2/lifetimes.md`
+    "src/file_lock", # For `day2/hour2/raii.md`
+
+    # Day 2, Hour 3
+    "src/count_primes", # For `day2/hour3/count_primes.md`
+    "src/count_primes_bad", # For `day2/hour3/count_primes.md"
+    "src/count_primes_atomic", # For `day2/hour3/atomic.md"
+    "src/count_primes_atomic_many", # For `day2/hour3/atomic.md"
+    "src/count_primes_shared", # For `day2/hour3/count_primes.md`
+    "src/count_primes_shared2", # For `day2/hour3/count_primes.md`
+    "src/count_primes_rayon", # For `day2/hour3/rayon.md"
+    "src/count_primes_rayon2", # For `day2/hour3/rayon.md"
+    "src/rayon_threads", # For `day2/hour3/rayon.md"
+
+    # Day 2, Hour 4
+    "src/hello_tokio", # For `day2/hour4/hello_tokio.md"
+    "src/tokio_tcp", # For `day2/hour4/tcp_server.md"
+    "src/tokio_rpc", # For `day2/hour4/tcp_server.md"
+    "src/tokio_channels", # For `day2/hour4/channels.md"
+    "src/tokio_channels2", # For `day2/hour4/channels.md"
+    "src/thread_channels", # For `day2/hour4/channels.md"
+
+    # Day 3, Hour 2
+    "src/generic_data", # For `day3/hour2/generic_data.md"
+    "src/generic_data_complex", # For `day3/hour2/generic_data.md"
+    "src/globals", # For `day3/hour1/globals.md"
+
+    # Day 4
+    "src/bench", # For `day4/hour1/benchmarks.md`
+    "src/flags_lib", # For `day4/hour1/feature_flags.md`
+    "src/flags_exe", # For `day4/hour1/feature_flags.md`
+    "src/macros", # For `day4/hour1/macros.md`
+    "src/tcp_login_server", # For `day4/hour1/tcp_login.md`
+    "src/rocket", # For `day4/hour1/rocket.md`
+    "src/rocket2", # For `day4/hour1/rocket.md`
+    "src/tcp_login_server_bench", # For `day4/hour1/tcp_login.md`
+#    "src/dashmap", "src/variables", "variables", # For `day4/hour1/dashmap.md`
+]
